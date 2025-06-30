@@ -59,17 +59,9 @@
       watermarkLink: '',
       position: 'top-right',
       levelSelectorConfig: {
-        labels: {
-          6: '1080',
-          5: '720',
-          4: '480',
-          3: '360',
-          2: '240',
-          1: '120',
-          0: 'Auto'
-        },
+        
         labelCallback: function (resolution, label) {
-          return label + resolution;
+          return label + resolution + 'p' ;
         }
       },
       playback: {
