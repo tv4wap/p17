@@ -44,7 +44,7 @@
       return queryParams.get(param);
     }
 
-    const videoSource = getQueryParam('url') || 'https://sportsleading.online/live/stream_e1.m3u8';
+    const videoSource = getQueryParam('url');
 
     const player = new Clappr.Player({
       mimeType: 'application/x-mpegURL',
