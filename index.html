@@ -48,8 +48,10 @@
 
     const player = new Clappr.Player({
       mimeType: 'application/x-mpegURL',
-      autoPlay: true,
-      mute:yes,
+      maxBufferLength: 2000000,
+ autoPlay: true, 
+autoPlayVisible: 'partial',
+mute: true,
       height: '100%',
       width: '100%',
       plugins: [CDNByeClapprPlugin, LevelSelector],
